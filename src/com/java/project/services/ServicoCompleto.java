@@ -1,11 +1,14 @@
 package com.java.project.services;
 
-import com.java.project.Servicos;
+import java.time.LocalDate;
 
 public class ServicoCompleto implements Servicos {
 
-    int maxAgendamentos = 15;
-    int numAgendamentos = 14;
+
+    @Override
+    public void consultarHorarios(LocalDate data) {
+
+    }
 
     @Override
     public void agendar(){
@@ -15,9 +18,8 @@ public class ServicoCompleto implements Servicos {
         System.out.println("Seu agendamento foi cancelado com sucesso!");
     }
 
-    public void consultarHorarios(){
-
-    }
 }
+
+
 
 
