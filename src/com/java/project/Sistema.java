@@ -14,6 +14,6 @@ public class Sistema {
              servicos.cancelarAgendamento();
      }
 
-     public void consultarHorarios(){ servicos.consultarHorarios();}
+    // public void consultarHorarios(){ servicos.consultarHorarios();}
 
 }

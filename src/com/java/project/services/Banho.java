@@ -1,5 +1,7 @@
 package com.java.project.services;
 
+import com.java.project.Servicos;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -22,8 +24,12 @@ public class Banho implements Servicos {
         horariosDisponiveis.add(LocalDateTime.now().plusDays(11).withHour(9).withMinute(30));
         horariosDisponiveis.add(LocalDateTime.now().plusDays(12).withHour(10).withMinute(0));
     }
+
+    // Local Date, Time, Local DateTime ??
     @Override
     public void consultarHorarios(LocalDate data) {}
+
+
     @Override
     public void agendar() {
         if (numAgendamentos < maxAgendamentos) {
